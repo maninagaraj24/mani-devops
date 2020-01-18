@@ -1,0 +1,4 @@
+---
+ - name: Install Nginx 
+   import_tasks: nginx.yaml
+   when: install_nginx == 'yes'

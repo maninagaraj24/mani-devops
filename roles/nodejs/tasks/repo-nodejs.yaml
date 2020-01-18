@@ -1,0 +1,8 @@
+---
+ - name: Download and Install Nodejs PPA
+   shell: "curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -"
+   when: ansible_os_family == 'Debian'
+
+ - name: Download and Install Nodejs PPA for Redhat
+   shell: "curl -sL https://rpm.nodesource.com/setup_13.x | sudo -E bash -"
+   when: ansible_os_family == 'RedHat'

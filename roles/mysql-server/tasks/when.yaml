@@ -1,0 +1,4 @@
+---
+ - name: Include role when you answered yea
+   include_tasks: mysql.yml
+   when: install_mysql == 'yes'

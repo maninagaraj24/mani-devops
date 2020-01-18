@@ -1,0 +1,4 @@
+---
+ - name: Include role when you answered yea
+   include_tasks: ntp.yaml
+   when: install_ntp == 'yes'

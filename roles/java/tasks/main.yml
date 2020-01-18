@@ -1,0 +1,4 @@
+---
+ - name: Install Java
+   import_tasks: java.yaml
+   when: install_java == 'yes'

@@ -1,0 +1,14 @@
+---
+ - name: Install Debian Mysql
+   apt:
+    update_cache: yes
+    name: mysql-server
+    state: present
+   when: ansible_os_family == 'Debian'
+ - name: Install Redhat Mysql  
+   yum:
+    update_cache: yes      
+    name: mysql-server
+    state: present
+   when: ansible_os_family == 'RedHat'  
+   

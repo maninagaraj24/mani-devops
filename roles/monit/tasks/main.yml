@@ -1,0 +1,5 @@
+---
+ - name: Install Monit 
+   import_tasks: require.yaml
+   import_tasks: download.yaml
+   when: install_monit == 'yes'

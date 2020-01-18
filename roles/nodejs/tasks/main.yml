@@ -1,0 +1,7 @@
+---
+# tasks file for ./roles/nodejs/
+ - name: Include role when you answered yea
+   import_tasks: curl.yaml
+   import_tasks: repo-nodejs.yaml
+   import_tasks: nodejs.yaml
+   when: install_nodejs == 'yes'

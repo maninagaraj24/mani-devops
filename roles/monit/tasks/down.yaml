@@ -1,0 +1,4 @@
+---
+ - name: Download Monit
+     shell: wget -P ./files  wget https://mmonit.com/monit/dist/monit-monit_5.26.0.tar.gz
+     when: install_monit == 'yes'

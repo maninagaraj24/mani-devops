@@ -1,0 +1,4 @@
+---
+ - name: Install Apache 
+   import_tasks: apache.yaml
+   when: install_apache == 'yes'

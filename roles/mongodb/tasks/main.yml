@@ -1,0 +1,6 @@
+---
+ - name: INSTALL MongoDB
+   import_tasks: apt.yaml
+   import_tasks: yum.yaml
+   when: install_mongodb == 'yes'
+

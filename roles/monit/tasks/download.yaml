@@ -1,0 +1,21 @@
+---
+ - name: Unarchive Monit
+   unarchive:
+       src: monit-5.26.0.tar.gz   
+       dest: /tmp/
+       remote_src: no
+ - name: Configure 
+   shell:
+       chdir: /tmp/monit-5.26.0
+       cmd: "./configure --without-pam"
+ - name: Compile Monit
+   make:
+     chdir: /tmp/monit-5.26.0
+     target: all
+         
+ - name:
+   make:
+      chdir: /tmp/monit-5.26.0
+      target: install
+   become: yes   
+

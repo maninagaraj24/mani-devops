@@ -1,0 +1,11 @@
+---
+ - name: Nodejs for Debian
+   apt:
+    name: nodejs
+    state: present
+   when: ansible_os_family == 'Debian'
+ - name: Nodejs Install for Redhat
+   yum:
+    name: nodejs
+    state: present
+   when: ansible_os_family == 'RedHat'

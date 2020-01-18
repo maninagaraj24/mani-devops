@@ -1,0 +1,22 @@
+---
+ - block:
+        - name: Unarchive Java
+          unarchive:
+           src: ./roles/java/files/jdk-8u231-linux-x64.tar.gz
+           dest: /usr/local/jdk1.8.0_231
+           remote_src: no
+        - name: Symlink
+          file:
+           src: /usr/local/jdk1.8.0_231
+           dest: /usr/local/java
+           state: link
+   become: yes
+ - name: Environment Setup
+   blockinfile:
+      dest: ~/.bashrc
+      block: |
+         PATH="$PATH:/usr/local/jdk1.8.0_231/bin"
+         JAVA_HOME=/usr/local/java
+
+ 
+

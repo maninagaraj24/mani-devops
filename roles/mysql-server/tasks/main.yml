@@ -1,0 +1,4 @@
+---
+ - name: Mysql Installation
+   import_tasks: mysql.yml
+   when: install_mysql == 'yes'

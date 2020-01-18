@@ -1,0 +1,40 @@
+---
+ - name: A play with a vars_prompt section
+   gather_facts: true
+   become: yes
+   hosts: linux
+   vars_prompt:
+     - name: install_mysql
+       prompt: "Do yo want to install mysql (yes/no)?"
+       private: no
+     - name: install_apache
+       prompt: "Do yo want to install apache (yes/no)?"
+       private: no   
+     - name: install_nginx
+       prompt: "Do you want to install nginx (yes/no)?"
+       private: no
+     - name: install_ntp
+       prompt: "Do you want to install ntp (yes/no)?"
+       private: no
+     - name: install_nodejs
+       prompt: "Do you want to install nodejs (yes/no)?"
+       private: no
+     - name: install_mongodb
+       prompt: "Do you want to install mongodb (yes/no)?"
+       private: no
+     - name: install_java
+       prompt: "Do you want to install java (yes/no)?"
+       private: no
+     - name: install_monit
+       prompt: "Do you want to install Monit (yes/no)?"
+       private: no
+   roles:
+    - mysql-server
+    - apache
+    - nginx
+    - ntp
+    - nodejs 
+    - mongodb
+    - java  
+    - monit 
+

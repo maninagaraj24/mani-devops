@@ -1,0 +1,12 @@
+---
+ - name: Install Debian Webserver
+   apt: 
+    name: apache2
+    state: present
+   when: ansible_os_family == 'Debian'
+ - name: Install Redhat Apache
+   yum: 
+    name: httpd
+    state: present
+   when: ansible_os_family == 'RedHat'  
+

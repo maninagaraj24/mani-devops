@@ -1,0 +1,11 @@
+---
+ - name: Curl Install
+   apt:
+    name: curl
+    state: present
+   when: ansible_os_family == 'Debian'		  
+ - name: Curl Install for Redhat
+   yum:
+    name: curl
+    state: present
+   when: ansible_os_family == 'RedHat' 	

@@ -1,0 +1,5 @@
+---
+# tasks file for ./roles/ntp
+- import_tasks: ntp.yaml
+- import_tasks: when.yaml
+

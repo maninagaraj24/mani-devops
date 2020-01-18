@@ -1,0 +1,13 @@
+---
+ - name: Install Debian ntp
+   apt:
+    name: ntp
+    state: present
+   when: ansible_os_family== 'Debian'
+ - name: Install Redhat ntp
+   yum:
+    name: ntp
+    state: present
+   when: ansible_os_family== 'Redhat' 
+     
+

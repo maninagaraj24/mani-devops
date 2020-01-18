@@ -1,0 +1,6 @@
+---
+ vars_prompt:
+   - name: install_apache
+     prompt: Do you want install apache (yes/no)?:
+     private: no
+
