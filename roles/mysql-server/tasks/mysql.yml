@@ -1,14 +1,3 @@
----
- - name: Install Debian Mysql
-   apt:
-    update_cache: yes
-    name: mysql-server
-    state: present
-   when: ansible_os_family == 'Debian'
- - name: Install Redhat Mysql  
-   yum:
-    update_cache: yes      
-    name: mysql
-    state: present
-   when: ansible_os_family == 'RedHat'  
-   
+version https://git-lfs.github.com/spec/v1
+oid sha256:12d07cabea3965b58d4ca5a20d472c2d390e7e1a0d34a2f704d9b62547a10154
+size 293

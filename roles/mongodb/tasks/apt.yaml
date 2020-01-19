@@ -1,12 +1,3 @@
----
- - block:
-      - name: Repo Add
-        shell: "wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add - "
-      - name: Create Repo
-        shell: ' echo "deb [ arch=amd64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list '
-      - name: Install Mongo DB
-        apt:
-           update_cache: yes
-           name: mongodb-org
-           state: present
-   when: ansible_os_family == 'Debian'
+version https://git-lfs.github.com/spec/v1
+oid sha256:e59c9dedd5084cd8b1214139ce81c3a2b0fadc96c84ca140bc945d4951ff2572
+size 501

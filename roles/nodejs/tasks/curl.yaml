@@ -1,11 +1,3 @@
----
- - name: Curl Install
-   apt:
-    name: curl
-    state: present
-   when: ansible_os_family == 'Debian'		  
- - name: Curl Install for Redhat
-   yum:
-    name: curl
-    state: present
-   when: ansible_os_family == 'RedHat' 	
+version https://git-lfs.github.com/spec/v1
+oid sha256:ee5fab86cbcef42f9c09542113f9b5b173905cb08ae8460c38963ad91f3151df
+size 227

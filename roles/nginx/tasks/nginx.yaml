@@ -1,12 +1,3 @@
----
- - name: Install Debian nginx
-   apt:
-    name: nginx
-    state: present
-   when: ansible_os_family == 'Debian'
- - name: Install Redhat nginx
-   yum:
-    name: nginx
-    state: present
-   when: ansible_os_family == 'RedHat'
- 
+version https://git-lfs.github.com/spec/v1
+oid sha256:7a9f64234d3099f5905648d08d493afb903b43fa026eb6332264d023ddf48b3f
+size 230

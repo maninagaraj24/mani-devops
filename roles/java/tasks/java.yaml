@@ -1,22 +1,3 @@
----
- - block:
-        - name: Unarchive Java
-          unarchive:
-           src: ./roles/java/files/jdk-8u231-linux-x64.tar.gz
-           dest: /usr/local/jdk1.8.0_231
-           remote_src: no
-        - name: Symlink
-          file:
-           src: /usr/local/jdk1.8.0_231
-           dest: /usr/local/java
-           state: link
-   become: yes
- - name: Environment Setup
-   blockinfile:
-      dest: ~/.bashrc
-      block: |
-         PATH="$PATH:/usr/local/jdk1.8.0_231/bin"
-         JAVA_HOME=/usr/local/java
-
- 
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:82572d42127f329fc82f91e51989ec9fa36b9ce56889464e377c1c81cca2267c
+size 515

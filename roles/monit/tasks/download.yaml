@@ -1,21 +1,3 @@
----
- - name: Unarchive Monit
-   unarchive:
-       src: monit-5.26.0.tar.gz   
-       dest: /tmp/
-       remote_src: no
- - name: Configure 
-   shell:
-       chdir: /tmp/monit-5.26.0
-       cmd: "./configure --without-pam"
- - name: Compile Monit
-   make:
-     chdir: /tmp/monit-5.26.0
-     target: all
-         
- - name:
-   make:
-      chdir: /tmp/monit-5.26.0
-      target: install
-   become: yes   
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:dc77c504ca8f990f09247bdbb2502bc08ac1c7227500c3297177d4f42d8a92e7
+size 400

@@ -1,8 +1,3 @@
----
- - hosts: linux
-   gather_facts: true
-   become: yes
-   tasks:
-   - shell:
-         chdir: /etc/ssh/ssh_config
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:0e9cb399493eb6668d4072a6ee3d1f4a5754e6cea91bed70ef890111b06ceef5
+size 116

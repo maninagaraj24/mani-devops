@@ -1,4 +1,3 @@
----
- - name: Include role when you answered yea
-   include_tasks: ntp.yaml
-   when: install_ntp == 'yes'
+version https://git-lfs.github.com/spec/v1
+oid sha256:4084986d4a276b1881983c2417e15ca12024dc1c04e8d7dceb7eea4aa039d89b
+size 105

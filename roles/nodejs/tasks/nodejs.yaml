@@ -1,11 +1,3 @@
----
- - name: Nodejs for Debian
-   apt:
-    name: nodejs
-    state: present
-   when: ansible_os_family == 'Debian'
- - name: Nodejs Install for Redhat
-   yum:
-    name: nodejs
-    state: present
-   when: ansible_os_family == 'RedHat'
+version https://git-lfs.github.com/spec/v1
+oid sha256:d487bc080adcbe2302860164ec42d3002ef0175650438bb18773f07a0c8ca1d7
+size 232

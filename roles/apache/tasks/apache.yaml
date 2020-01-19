@@ -1,12 +1,3 @@
----
- - name: Install Debian Webserver
-   apt: 
-    name: apache2
-    state: present
-   when: ansible_os_family == 'Debian'
- - name: Install Redhat Apache
-   yum: 
-    name: httpd
-    state: present
-   when: ansible_os_family == 'RedHat'  
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:323345374d8b22119730d7ee1c637037e2f7f72f570b70aebff484f40ff0b2bf
+size 240

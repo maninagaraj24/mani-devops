@@ -1,7 +1,3 @@
----
-# tasks file for ./roles/nodejs/
- - name: Include role when you answered yea
-   import_tasks: curl.yaml
-   import_tasks: repo-nodejs.yaml
-   import_tasks: nodejs.yaml
-   when: install_nodejs == 'yes'
+version https://git-lfs.github.com/spec/v1
+oid sha256:520bf6f114f53fa9da687ed162a1fa8b5a36c7ef4ddc5659fc995c42889b8da7
+size 204

@@ -1,5 +1,3 @@
----
-- hosts: localhost
-  remote_user: root
-  roles:
-    - ./roles/apache
+version https://git-lfs.github.com/spec/v1
+oid sha256:70643dfb7f74e464a01c864d40918e47d5535d8ca9017dcc146d467ec9889548
+size 72

@@ -1,5 +1,3 @@
----
-# tasks file for ./roles/ntp
-- import_tasks: ntp.yaml
-- import_tasks: when.yaml
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:ff05990d4aa148563c942010e56ad6e41bf5abfb191f412b5a779a84b81ec279
+size 85

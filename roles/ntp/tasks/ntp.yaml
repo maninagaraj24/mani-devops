@@ -1,13 +1,3 @@
----
- - name: Install Debian ntp
-   apt:
-    name: ntp
-    state: present
-   when: ansible_os_family== 'Debian'
- - name: Install Redhat ntp
-   yum:
-    name: ntp
-    state: present
-   when: ansible_os_family== 'Redhat' 
-     
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:3d4b641ac0d2f0112ae73bbb06971f0901c662571947bbca3d808de1eb6f1fb7
+size 226
