@@ -8,7 +8,7 @@
  - name: Install Redhat Mysql  
    yum:
     update_cache: yes      
-    name: mysql-server
+    name: mysql
     state: present
    when: ansible_os_family == 'RedHat'  
    

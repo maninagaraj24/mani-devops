@@ -28,7 +28,7 @@
      - name: install_monit
        prompt: "Do you want to install Monit (yes/no)?"
        private: no
-   roles:
+   roles:   
     - mysql-server
     - apache
     - nginx

@@ -1,0 +1,8 @@
+---
+ - hosts: linux
+   gather_facts: true
+   become: yes
+   tasks:
+   - shell:
+         chdir: /etc/ssh/ssh_config
+
